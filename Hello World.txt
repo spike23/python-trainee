@@ -1,7 +1,0 @@
-
-print 'Hello world;'
-print 'Hello everybody;'
-print 'Hi there;'
-print 'Hello Vegas;'
-print 'Hello New York;'
-

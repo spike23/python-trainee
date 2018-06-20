@@ -19,7 +19,12 @@ def create_files(min_num, max_num):
             pass
         f.close()
         count += 1
-    print('Успешно создано ' + str(count) + ' файлов')
+    if count % 10 == 1:
+        print(str(count) + " файл")
+    elif count % 10 == 2 or count % 10 == 3 or count % 10 == 4:
+        print(str(count) + " файла")
+    else:
+        print(str(count) + " файлов")
 
 
 print('Хотите создать n количество экземпляров файлов?')

@@ -25,12 +25,10 @@ def factorial(num):
         return num * factorial(num -1)
 
 
-# фибоначчи (0,1,1,2,3,5,8,13,21,34,55,88...n)
+# выбор числа по номеру из последовательности фибоначчи (0,1,1,2,3,5,8,13,21,34,55,88...n)
 def fibonacci(num):
-    if num == 0:
-        return 0
-    elif num == 1:
-        return 1
+    if num < 2:
+        return num
     else:
         return fibonacci(num -1) + fibonacci(num -2)
 
@@ -40,3 +38,5 @@ if __name__ == '__main__':
     print(sum_of_digits(5))
     print(factorial(5))
     print(fibonacci(7))
+    # печать последовательности n-количества элементов
+    print([fibonacci(num) for num in range(15)])

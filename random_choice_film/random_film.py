@@ -6,4 +6,5 @@ a = int(input("How many films will you watch? "))
 for i in my_films:
     filmlist.append(i)
 choice = random.sample(filmlist, a)
-print(choice)
+result = ', '.join(choice)
+print(result)

@@ -23,7 +23,6 @@ class RandomChoiceFilm:
             print(result)
             # создаем новый список без филмьов, которые указаны для загрузки
             update_list = [x for x in reader if x not in choice]
-            print(len(update_list))
             new_film_list = '\n'.join(update_list)
             new.writelines(result)
             return new_film_list
